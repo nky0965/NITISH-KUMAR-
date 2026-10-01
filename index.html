@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>NITISH COMMON SERVICE CENTRE | Kushahar Chauk, Mahua</title>
+  <meta name="description" content="NITISH COMMON SERVICE CENTRE, Kushahar Chauk, Mahua, Vaishali, Bihar — CSC, online form, printing, scanning, digital services and more.">
+  <style>
+    :root{--bg:#f8fafc;--dark:#0f172a;--blue:#2563eb;--cyan:#06b6d4;--text:#1e293b;--muted:#64748b;--card:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(15,23,42,.94);backdrop-filter:blur(12px);color:white;border-bottom:1px solid rgba(255,255,255,.08)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;font-size:20px;box-shadow:0 8px 25px #06b6d433}
+    .brand small{display:block;color:#94a3b8;font-weight:500;font-size:11px}
+    .navlinks{display:flex;gap:22px;font-size:14px;color:#cbd5e1}
+    .navlinks a:hover{color:white}
+    .menu{display:none;background:none;border:0;color:white;font-size:25px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0f172a 0%,#172554 55%,#0e7490 100%);color:white;padding:90px 0 80px}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.25}
+    .hero:before{width:330px;height:330px;background:#38bdf8;right:-100px;top:-120px}
+    .hero:after{width:250px;height:250px;background:#6366f1;left:-100px;bottom:-100px}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.3fr .7fr;gap:45px;align-items:center}
+    .badge{display:inline-flex;padding:7px 13px;border:1px solid #ffffff33;background:#ffffff12;border-radius:999px;font-size:13px;margin-bottom:18px}
+    h1{font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-2px;margin-bottom:20px}
+    .gradient{background:linear-gradient(90deg,#67e8f9,#93c5fd,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{color:#cbd5e1;max-width:680px;font-size:18px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:12px;font-weight:700;border:1px solid transparent;transition:.2s}
+    .btn-primary{background:white;color:#0f172a}.btn-primary:hover{transform:translateY(-2px)}
+    .btn-outline{border-color:#ffffff38;color:white;background:#ffffff0b}
+    .hero-card{background:#ffffff12;border:1px solid #ffffff20;border-radius:24px;padding:25px;box-shadow:0 25px 60px #0003}
+    .status{display:flex;align-items:center;gap:9px;color:#bbf7d0;font-weight:700;margin-bottom:18px}
+    .dot{width:9px;height:9px;background:#22c55e;border-radius:50%;box-shadow:0 0 0 6px #22c55e20}
+    .hero-card h3{font-size:24px;margin-bottom:8px}.hero-card p{font-size:14px}
+    section{padding:75px 0}.section-head{text-align:center;margin-bottom:40px}
+    .eyebrow{color:var(--blue);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}
+    .section-head h2{font-size:clamp(28px,4vw,42px);margin:6px 0 8px;color:var(--dark)}
+    .section-head p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:18px;padding:23px;box-shadow:0 10px 35px #0f172a0a;transition:.2s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 18px 45px #0f172a12}
+    .icon{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:#eff6ff;font-size:22px;margin-bottom:14px}
+    .card h3{font-size:18px;margin-bottom:6px;color:var(--dark)}.card p{color:var(--muted);font-size:14px}
+    .strip{background:#0f172a;color:white}.strip .section-head h2{color:white}.strip .section-head p{color:#94a3b8}
+    .price{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 0;border-bottom:1px solid #ffffff14;font-size:14px}.price:last-child{border:0}.price span:last-child{color:#67e8f9;font-weight:800}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact-card{background:white;border:1px solid #e2e8f0;border-radius:20px;padding:28px}
+    .contact-item{display:flex;gap:14px;margin:18px 0}.contact-item b{display:block;color:var(--dark)}.contact-item span{color:var(--muted);font-size:14px}
+    .map{min-height:330px;border-radius:20px;background:linear-gradient(135deg,#dbeafe,#cffafe);display:grid;place-items:center;text-align:center;padding:30px;border:1px solid #bae6fd}
+    footer{background:#020617;color:#94a3b8;padding:28px 0;text-align:center;font-size:13px}
+    .whatsapp{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:white;font-size:26px;box-shadow:0 10px 30px #0004}
+    @media(max-width:800px){.navlinks{display:none}.menu{display:block}.hero-grid,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}h1{letter-spacing:-1px}.hero{padding:65px 0}}
+    @media(max-width:520px){.grid{grid-template-columns:1fr}.hero-card{padding:20px}.btn{width:100%}.buttons{display:grid}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a href="#home" class="brand"><div class="logo">N</div><div>NITISH COMMON SERVICE CENTRE<small>Kushahar Chauk • Mahua • Vaishali</small></div></a>
+      <div class="navlinks"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <button class="menu" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">● डिजिटल सेवाएँ • ऑनलाइन सुविधा • लोकल सपोर्ट</div>
+      <h1>आपके काम की<br><span class="gradient">हर डिजिटल सुविधा</span></h1>
+      <p>NITISH COMMON SERVICE CENTRE में CSC एवं ऑनलाइन सेवाओं, फॉर्म, प्रिंटिंग, स्कैनिंग और अन्य डिजिटल कार्यों के लिए संपर्क करें।</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="tel:8084342039">📞 अभी कॉल करें</a>
+        <a class="btn btn-outline" href="https://wa.me/918084342039?text=Namaste%20Nitish%20Common%20Service%20Centre%2C%20mujhe%20online%20service%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank">💬 WhatsApp करें</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="status"><span class="dot"></span> आज सेवा के लिए उपलब्ध</div>
+      <h3>9:00 AM — 7:30 PM</h3>
+      <p>समय में बदलाव हो सकता है। किसी विशेष सेवा के लिए आने से पहले फोन/WhatsApp पर पूछ लें।</p>
+      <hr style="border:0;border-top:1px solid #ffffff1f;margin:20px 0">
+      <p>📍 Kushahar Chauk, Mahua, Vaishali, Bihar</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Our Services</div><h2>हमारी प्रमुख सेवाएँ</h2><p>उपलब्ध सेवाएँ संबंधित पोर्टल, दस्तावेज़ और सरकारी नियमों पर निर्भर कर सकती हैं।</p></div>
+    <div class="grid">
+      <div class="card"><div class="icon">🪪</div><h3>आधार से जुड़ी सेवाएँ</h3><p>आधार संबंधी उपलब्ध ऑनलाइन कार्य, अपडेट/स्टेटस सहायता और प्रिंट जैसी सुविधाएँ।</p></div>
+      <div class="card"><div class="icon">🏦</div><h3>Banking / AEPS</h3><p>उपलब्ध बैंकिंग एवं डिजिटल भुगतान सेवाओं के लिए सहायता। सेवा उपलब्धता बैंक/पोर्टल पर निर्भर।</p></div>
+      <div class="card"><div class="icon">📄</div><h3>Online Form</h3><p>सरकारी एवं निजी ऑनलाइन आवेदन, रजिस्ट्रेशन, एडमिट कार्ड, रिजल्ट और स्टेटस सहायता।</p></div>
+      <div class="card"><div class="icon">🧾</div><h3>Certificate Services</h3><p>उपलब्ध आय, जाति, निवास तथा अन्य प्रमाण-पत्र आवेदन में ऑनलाइन सहायता।</p></div>
+      <div class="card"><div class="icon">💰</div><h3>Bill Payment</h3><p>उपलब्ध बिजली, मोबाइल, DTH और अन्य डिजिटल बिल/रीचार्ज सेवाएँ।</p></div>
+      <div class="card"><div class="icon">🖨️</div><h3>Print • Scan • Xerox</h3><p>Black & White/Colour प्रिंट, स्कैन, फोटोकॉपी और दस्तावेज़ संबंधी डिजिटल सुविधा।</p></div>
+      <div class="card"><div class="icon">📸</div><h3>Photo & Document</h3><p>पासपोर्ट फोटो, फोटो/दस्तावेज़ तैयार करना और डिजिटल फाइल बनाना।</p></div>
+      <div class="card"><div class="icon">🎓</div><h3>Education Services</h3><p>स्कॉलरशिप, परीक्षा फॉर्म, कॉलेज/यूनिवर्सिटी आवेदन, एडमिट कार्ड एवं रिजल्ट सहायता।</p></div>
+      <div class="card"><div class="icon">🚆</div><h3>Travel / Booking</h3><p>उपलब्ध ऑनलाइन टिकट/ट्रैवल संबंधित सेवाओं के लिए सहायता।</p></div>
+      <div class="card"><div class="icon">🛡️</div><h3>Insurance Services</h3><p>उपलब्ध बीमा योजनाओं/सेवाओं की जानकारी एवं ऑनलाइन प्रक्रिया में सहायता।</p></div>
+      <div class="card"><div class="icon">🌐</div><h3>Digital Services</h3><p>Email, document upload, online registration, PDF work और अन्य इंटरनेट आधारित कार्य।</p></div>
+      <div class="card"><div class="icon">📱</div><h3>Mobile & Digital Help</h3><p>ऑनलाइन अकाउंट, डाउनलोड, अपलोड, आवेदन प्रिंट और सामान्य डिजिटल सहायता।</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="strip">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow" style="color:#67e8f9">Why Visit Us</div><h2>स्थानीय, आसान और डिजिटल</h2><p>एक ही जगह पर रोज़मर्रा के ऑनलाइन और डिजिटल कामों में सहायता।</p></div>
+    <div class="grid">
+      <div class="card" style="background:#ffffff08;border-color:#ffffff14;color:white"><div class="icon">⚡</div><h3 style="color:white">Quick Service</h3><p>जरूरी दस्तावेज़ और जानकारी के साथ आएँ, ताकि काम जल्दी हो सके।</p></div>
+      <div class="card" style="background:#ffffff08;border-color:#ffffff14;color:white"><div class="icon">🔒</div><h3 style="color:white">Document Care</h3><p>अपने मूल दस्तावेज़ और OTP जैसी संवेदनशील जानकारी किसी अनजान व्यक्ति को न दें।</p></div>
+      <div class="card" style="background:#ffffff08;border-color:#ffffff14;color:white"><div class="icon">🤝</div><h3 style="color:white">Local Support</h3><p>कुशहर चौक, महुआ क्षेत्र में डिजिटल कार्यों के लिए सुविधाजनक सहायता।</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Service Note</div><h2>आने से पहले पूछ लें</h2><p>कुछ CSC/सरकारी सेवाएँ पोर्टल, पात्रता, बायोमेट्रिक, दस्तावेज़ और उपलब्धता के अनुसार बदल सकती हैं।</p></div>
+    <div class="card" style="max-width:800px;margin:auto;text-align:center">
+      <div class="price"><span>📞 संपर्क नंबर</span><span>8084342039</span></div>
+      <div class="price"><span>🕘 सेवा समय</span><span>9:00 AM – 7:30 PM</span></div>
+      <div class="price"><span>📍 स्थान</span><span>Kushahar Chauk, Mahua</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:20px">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Contact Us</div><h2>संपर्क करें</h2></div>
+    <div class="contact">
+      <div class="contact-card">
+        <div class="contact-item"><div class="icon">📍</div><div><b>पता</b><span>NITISH COMMON SERVICE CENTRE<br>Kushahar Chauk, Mahua, Vaishali, Bihar</span></div></div>
+        <div class="contact-item"><div class="icon">📞</div><div><b>मोबाइल</b><span>8084342039</span></div></div>
+        <div class="contact-item"><div class="icon">🕘</div><div><b>समय</b><span>9:00 AM से 7:30 PM</span></div></div>
+        <div class="buttons">
+          <a class="btn btn-primary" href="tel:8084342039">📞 Call Now</a>
+          <a class="btn" style="background:#dcfce7;color:#166534" href="https://wa.me/918084342039" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="map">
+        <div><div style="font-size:52px">📍</div><h3>Kushahar Chauk, Mahua</h3><p>Vaishali, Bihar</p><a class="btn btn-primary" style="margin-top:15px" href="https://www.google.com/maps/search/?api=1&query=Kushahar+Chauk%2C+Mahua%2C+Vaishali%2C+Bihar" target="_blank">🗺️ Google Maps खोलें</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<a class="whatsapp" href="https://wa.me/918084342039" target="_blank" aria-label="WhatsApp">☏</a>
+<footer>
+  <div class="container">© 2026 NITISH COMMON SERVICE CENTRE • Kushahar Chauk, Mahua, Vaishali, Bihar</div>
+</footer>
+</body>
+</html>
